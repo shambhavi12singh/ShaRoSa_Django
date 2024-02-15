@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+    <style>
+        .ty
+        {
+            margin-left: 25%;
+            margin-right: 31%;
+            font-size:xx-large;
+            color: green;
+            background-color: aquamarine;
+        }
+        .ty1
+        {
+            text-align: center;
+            margin-left: 27.5%;
+            margin-right: 32.5%;
+            font-size:xx-large;
+            color: green;
+            background-color: aquamarine;
+        }
+        .ty2
+        {
+            margin-left: 17%;
+            margin-right: 17%;
+            font-size:xx-large;
+            color: green;
+            background-color: aquamarine;
+        }
+        .bill
+        {
+            color: black;
+            size: 15px;
+        }
+        div.main
+        {
+            width:100%;
+            margin-top: 0%;
+        margin-left:0px;
+        text-align: center;
+        font-size: 200%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: navy;
+        color: white;
+        opacity: 100%;
+        }
+    </style>
+</head>
+<body background="{% static 'billbg.jpeg'%}">
+    <div class="main" align="left">
+        <br>
+              <img src="{% static 'icon.png'%}">
+      </div>
+    <div class="ty">
+    <h1><b>Thank You For Staying<BR></b></h1>
+</div>
+<div class="ty1"><h1><b>Your Bill<BR></b></h1></div>
+
+<table border="2" width="100%" cellspacing="0" class="bill">
+    <tr>
+        <th><h1>Item Name</h1></th>
+        <th><h1>Charge</h1></th>
+    </tr>
+{% for record in s %}
+<tr>
+<td><h2 align="center">{{record.item}}</h2></td>
+<td><h2 align="center">{{record.charge}}</h2></td>
+</tr>
+{% endfor %}
+</table>
+<div class="ty2">
+<h1 align="center"><b>Please pay your dues at the reception<BR>
+{% for key,value in sum.items %}
+Payable amount: Rs. {{value}}
+{% endfor %}
+</b></h1>
+</div>
+<hr size="10px" color="black">
+<hr><hr size="10px" color="red">
+    <h1 align="center" class="t"><big>Click Here to Log Out</big><br><br>
+        <form action="Logout"><button  type="submit" value="LogOut" style="color: red; font-size: 40px;"> Log Out</button></form>
+    </h1>
+</body>
+</html>

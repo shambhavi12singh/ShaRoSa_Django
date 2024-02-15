@@ -1,0 +1,73 @@
+{% load static %}
+<html>
+<head> 
+<title>menu
+</title>
+<style type="text/css">
+	div.main
+        {
+            width:100%;
+            margin-top: 1%;
+        margin-left:0px;
+        text-align: center;
+        font-size: 200%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: navy;
+        color: white;
+        opacity: 75%;
+        }
+        .s1
+        {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .t
+        {
+            color: darkblue;
+        }
+</style>
+<link href="{% static 'bootstrap-5.2.0-dist/css/bootstrap.min.css' %}"  rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="{% static 'bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js' %}" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+</head>
+<body background="{% static 'billbg.jpeg'%}">
+    <div class="main" align="left">
+        <br>
+              <img src="{% static 'icon.png'%}">
+          <br>
+              <b><a href='/ShaRoSa/home'>Home</a> | <a href='/ShaRoSa/about'>About Us</a></b>
+      </div>
+<br>
+<div class="s1"><h1 style="font-size:80px;font-family: sans-serif; color: white;background-color: cadetblue;" size="50px" width="10%"><marquee>Order Your Choicest Delicacies</marquee></h1>
+<h3  style="font-size:70px;font-family: sans-serif; color:black;"> VEG ITEMS</h3>
+<hr size="10px" color="red">
+<ul type="disc" class="t">
+<form action="V1f">	<li style="font-size: 30px;"> SHAHI PANEER</li><center><button type="submit" name="v1"style="color:red;">FULL PLATE </button></form><form action="V1h"><button type="submit" name="s2"style="color:blueviolet;"> HALF PLATE</button></form></center>
+<form action="V2f">	<br><li style="font-size: 30px;"> SHAROSA SPECIAL CURRY</li><center><button type="submit" name="v2"style="color:red;">FULL PLATE </button></form><form action="V2h"><button type="submit" name="s2"style="color:blueviolet;"> HALF PLATE</button></form></center>
+<form action="V3f">	<br><li style="font-size: 30px;">LABABDAR PANEER</li><center><button type="submit" name="v3"style="color:red;">FULL PLATE </button></form><form action="V3h"><button type="submit" name="s2"style="color:blueviolet;"> HALF PLATE</button></form></center>
+</ul>
+<hr size="10px" color="black">
+<h3  style="font-size:70px;font-family: sans-serif; color:black;"> NON-VEG ITEMS</h3>
+<hr size="10px" color="red">
+<ul type="disc" class="t">
+<form action="N1f">	<li style="font-size: 30px;">EGG-CURRY</li><center><button type="submit" name="n1"style="color:red;">FULL PLATE</button></form><form action="N1h"><button type="submit" name="s2"style="color:blueviolet;"> HALF PLATE</button></form></center>
+<form action="N2f">	<li style="font-size: 30px;"> SHAROSA SPECIAL CHICKEN</li><center><button type="submit" name="n2"style="color:red;">FULL PLATE </button></form><form action="N2h"><button type="submit" name="s2"style="color:blueviolet;"> HALF PLATE</button></form></center>
+<form action="N3f">	<li style="font-size: 30px;">HANDI CHICKEN</li><center><button type="submit" name="n3"style="color:red;">FULL PLATE </button></form><br><form action="N3h"><button type="submit" name="s2"style="color:blueviolet;"> HALF PLATE</button></form></center>
+</ul>
+<hr size="10px" color="black">
+<h3  style="font-size:70px;font-family: sans-serif; color:black;"> DRINKS</h3>
+<hr size="10px" color="red">
+<ul type="disc" class="t">
+    <form action="D1f">	<li style="font-size: 30px;"> ANTIQUITY</li><center><button type="submit" name="d1" style="color:red;">250ml </button></form><br><form action="D1h"><button type="submit" name="s2"style="color:blueviolet;"> 750ml</button><br></form></center>
+    <form action="D2f">	<li style="font-size: 30px;"> BLACK DOG</li><center><button type="submit" name="d2"style="color:red;">250ml </button></form><form action="D2h"><button type="submit" name="s2"style="color:blueviolet;"> 750ml</button></form></center>
+    <form action="D3f">	<li style="font-size: 30px;">100 PIPERS</li><center><button type="submit" name="d3"style="color:red;">250ml </button></form><form action="D2h"><button type="submit" name="s2"style="color:blueviolet;"> 750ml</button></form></center>
+    <form action="D4f"> <li style="font-size: 30px;">BACARDI WHITE RUM</li><center><button type="submit" name="d4"style="color:red;">250ml </button></form><form action="D4h"><button type="submit" name="s2"style="color:blueviolet;"> 750ml</button></form></center>
+    <form action="D5f"> <li style="font-size: 30px;">TEQUILA LEY.925</li><center><button type="submit" name="d5"style="color:red;">250ml </button></form><form action="D5h"><button type="submit" name="s2"style="color:blueviolet;"> 750ml</button></form></center>
+</ul><hr size="10px" color="black">
+<hr><hr size="10px" color="red">
+    <h1 align="center" class="t"><big>Click Here to Check Out</big><br><br>
+        <form action="CO"><button  type="submit" value="CHECK OUT" style="color: red; font-size: 40px;"> CHECK OUT</button></form>
+    </h1>
+</body>
+</html>

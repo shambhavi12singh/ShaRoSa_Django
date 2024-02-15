@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>developers</title>
+    <style type="text/css">
+        .s1{
+            color: navy;
+            font-family: sans-serif;
+            font-size: xx-large;
+            background-color: cadetblue;
+            width: 480px;
+        }
+        p{
+            color: black;
+            font-family: lucida-handwritting;
+            font-size: 30px;
+
+        }
+        div.main
+        {
+            width:100%;
+            margin-top: 0%;
+        margin-left:0px;
+        text-align: center;
+        font-size: 200%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: navy;
+        color: white;
+        opacity: 100%;
+        }
+    </style>
+</head>
+<body background="{% static 'billbg.jpeg'%}">
+    <div class="main" align="left">
+        <br>
+              <img src="{% static 'icon.png'%}">
+          <br>
+              <b><a href='/ShaRoSa/home'>Home</a> | <a href='/ShaRoSa/about'>About Us</a></b>
+      </div>
+    <p><b>The objective of project is to design Hotel Management Website which enables the everyday user to easily avail all of the hotel services.
+
+The project has been designed in Django technology and consists of a SQLITE which acts as the database for the project.
+
+Our aim for the project came from our enthusiasm and strong urge to learn Django which is one of the fastest growing backend language foe website in today’s world.
+All the data needed for the application is stored in the form of tables in the SQLITE.
+</b></p>
+   <div class="s1"> <h1> DEVELOPERS</h1></div>
+  <center><img src="{% static 'Sha.jpeg'%}"></center> 
+  <center><h3 style="font-family: arial black; color: darkblue;">SHAMBHAVI SINGH<br><h4>(FRONTEND AND BACKEND DESIGNER)</h4></h3></center><hr color=" black"><br><br><br> 
+  <center><img src="{% static 'Ro.jpeg'%}"></center> 
+  <center><h3 style="font-family: arial black; color: darkblue;">ROHIT CHITRANSH<br><h4>(FRONTEND AND BACKEND DESIGN & TWEAKING)</h4></h3></center><hr color="black"><br><br><br> 
+  <center><img src="{% static 'Sa.jpeg'%}"></center>
+  <center><h3 style="font-family: arial black; color: darkblue;">SAHIL YADHUVANSHI<br><h4>(ADVANCEMENT IN FRONTEND DESIGNER)</h4></h3></center><hr color="black"><br><br><br>
+  <h1><b><i><u>DEVELOPMENT SKILL LEARNT FROM: </u><marquee><h1 style="font-family: arial black; color: navy;">MR. PARAM GOEL</h1></marquee></i></b></h1> 
+</body>
+</html>

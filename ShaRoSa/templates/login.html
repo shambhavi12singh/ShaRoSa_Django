@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    
+    <style>
+        div.main
+        {
+            width:100%;
+            margin-top: 0%;
+        margin-left:0px;
+        text-align: center;
+        font-size: 200%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: purple;
+        color: white;
+        opacity: 100%;
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>Login & Signup Form </title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <script>
+      function myfun(){
+        var a= document.myform.mail.value;
+        if(a.indexOf('@')<=0){
+          document.getElementById("message").innerHTML="**Invalid @ position";
+          return false;
+        }
+        if((a.charAt(a.length-4)!='.') && (a.charAt(a.length-3)!='.')){
+          document.getElementById("message").innerHTML="**Invalid . position";
+          return false;
+        }
+        var t=document.getElementById('passwords').value;
+
+      if(t=="")
+      {
+        document.getElementById("text").innerHTML="**Please fill password";
+         return false;      }
+         if(t.length<8){
+          document.getElementById("text").innerHTML="**Password length must greater than 8";
+          return false;
+         }
+
+        }
+
+      
+    </script>
+    <div class="main" align="left">
+        <br>
+              <img src="{% static 'icon.png'%}">
+          <br>
+              <b><a href='/ShaRoSa/home'>Home</a> | <a href='/ShaRoSa/about'>About Us</a></b>
+      </div>
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">Login Form</div>
+        <div class="title signup">Signup Form</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked>
+          <input type="radio" name="slide" id="signup">
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form action="log1" class="login" method="post">
+            {% csrf_token %}
+            <div class="field">
+              <input type="email" placeholder="Email Address" required name="mail">
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" required name="passwrd">
+            </div>
+            <div class="pass-link"></div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Login" method="POST">
+            </div>
+            <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+                 <div class="social">
+    <img src="{% static 'fb.jpeg'%}">
+    <img src="{% static 'goo.jpeg'%}">
+    <img src="{% static 'twit.jpeg'%}">
+  </div>
+          </form>
+          <form action="log" class="signup" method="post" name="myform" onsubmit="return myfun()">
+            {% csrf_token %}
+            <div class="field">
+              <input type="text" placeholder="Enter your name" required name="name">
+            </div>
+            <div class="field">
+              <input type="text" placeholder="enter your email" required name="mail" value="">
+              <span id="message"></span>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Enter your password" required name="passwrd" id="passwords" value="">
+              <span id="text" style="color:red"></span>
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Signup">
+            </div>
+          </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const loginText = document.querySelector(".title-text .login");
+      const loginForm = document.querySelector("form.login");
+      const loginBtn = document.querySelector("label.login");
+      const signupBtn = document.querySelector("label.signup");
+      const signupLink = document.querySelector("form .signup-link a");
+      signupBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+      });
+      loginBtn.onclick = (()=>{
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+      });
+      signupLink.onclick = (()=>{
+        signupBtn.click();
+        return false;
+      });
+    </script>
+
+  </body>
+</html>

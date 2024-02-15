@@ -1,0 +1,222 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        a{
+            color:black;
+            text-decoration: solid;
+            text-align: right;
+            font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+            font-size: x-large;
+        
+        }
+        #v1{
+            opacity: 0.5;
+            margin-top: 0px;
+            float:right;
+            
+        }
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        
+        #v2{
+            
+            margin-bottom: 10%;
+            background-repeat:no-repeat;
+            
+    
+        }
+        
+        #v3{
+            position:absolute;
+            color:white;
+            top:90px;
+            left:5px;
+            font-size:xx-large;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            
+        }
+        #v4{
+            position: inherit;
+            color:black;
+            top:125px;
+            left:5px;
+            right: 550px;
+            font-size:xx-large;
+            font-family:courier 'Courier New', Courier, monospace;
+        }
+        #v9{
+            display: inline-block;
+        }
+        .social2{
+  margin: 0px;
+  
+}
+        .social2 img{
+         margin-bottom: 500px;
+         margin-left: 0px;
+         
+         
+        }
+.social{
+    margin-left: 0px;
+    margin-top: 50px;
+}
+        .social img{ 
+         margin-top: 780px;
+         margin-left: 0px;  
+         margin-right: 0px;
+        }
+        .social1{
+  margin-top:10px ; 
+        }
+
+        .social1 img{
+          margin-top:50px;
+           margin-left:950px;
+     }
+     #v5{
+        
+        margin-top: 550px;
+        margin-left: 500px;
+        color:white;
+    
+     }
+     .yu{
+        filter:blur(2px)
+     }
+     .text{
+        color: darkblue;
+        font-family: verdana;
+        font-size:xx-large;
+        margin-right:50px;
+        margin-left: 700px;
+     }
+     .text2{
+        color: darkblue;
+        font-family:verdana;
+        margin-top: 120px;
+        align-content: left;
+        margin-right:700px;
+        margin-left:100px;
+        font-size: xx-large;
+     }
+     .text3{
+        color: darkblue;
+        margin-top:50px;
+        font-family:verdana;
+        align-content:right;
+        margin-left: 700px;
+        font-size:xx-large;
+    }
+     #text4{
+        margin-top:70px;
+        margin-right: 70%;
+        font-family:cursive;
+        text-decoration: wavy;
+        color:red;
+     }
+     .text5{
+        font-size: xx-large;
+        color:brown;
+        font-family:Arial, Helvetica, sans-serif;
+        text-decoration:solid;
+     }
+     .details{
+        margin-bottom:0px;
+        margin-top:30px;
+        height:200px;
+        width:100%;
+        background-color: cadetblue;
+        text-align: center;
+        font-size: 200%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+        opacity:75%;
+     }
+     div.main
+        {
+            width:100%;
+            margin-top: 2%;
+        margin-left:0px;
+        text-align: center;
+        font-size: 200%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: navy;
+        color: white;
+        opacity: 75%;
+        }
+     
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<body background="{% static 'billbg.jpeg'%}">
+    <div class="main" align="left">
+        <br>
+              <img src="{% static 'icon.png'%}">
+              <br>&nbsp;
+          <br>
+      </div>
+      <br>
+    <div id="v2">
+        <img src="{% static 'hotel.jpg'%}" width="100%" height="50%" class="yu">
+        <div id="v3">
+            
+            <h1></h1>
+            <div id="v4">
+                <br><br>
+                <p><b>SHAROSA The Hotel is smart hotel equipped with finest amenities.All rooms 
+                    have one digital electric touch panel and a tab is also provided for hassel free operations which you can access
+                    and control your lights,AC,Housekeeping,Food ordering etc.Property also have THAI SPA where 
+                    you can rejuvenate yourself.You can also enjoy rooftop dining at TIARA.</b>
+                </p>
+                <BR>
+                    <br>
+                    <br><br><br><br><br>
+                <div id="v5"><h1 style="font-size:47px;font-family: sans-serif;background-color: black;" size="30" width="30%"><marquee>SERVICES</marquee></h1></div>       
+            </div>            
+
+            <br><br>
+                <br><br><br><br><br><br><br><br><br><br>
+            <div class="social"><img src="{% static 'bedroom.jpg'%}" height="50%" width="40%">
+            </div>
+            <div class="social1"><img src="{% static 'bar1.jpg'%}" height="50%" width="40%" ></div>
+                
+            
+            <div class="social2"><img src="{% static 'restaurant.jpg'%}" height="50%" width="40%"></div>
+        </div>
+    </div>        
+        </div>
+    </div> 
+    <div class="text"><p align="right"><b><br>Enjoy our elegant bedrooms,designed in warm beige tones and tailored to the needs of private and business treavelers alike.All rooms have a large marble bathroom,a double bed,air conditioning,an additional work area with free internet access and a walk in closet.</b></p>
+    </div>  
+    <div class="text2"><p align="left"><br><br><br><br><b>Enjoy a drink in our spacious lounge bar,<br>is a truly enjoyable experience.There is a<br> full range of bar drinks including a wide selection of spirits,Whisky,Brandy and<br> liquors ,soft drinks and beer.</b></p>
+    </div>
+    <div class="text3"><p align="right"><b><br><br><br>The SHAROSA offers its guests a unique and unforgettable dining.Our menu is based on the principles of using high quality raw local ingredients imported from around the world,freshly cooked and presented by our head chef Matt Clarke and his team with care and attention.</b></p>
+    </div>
+    <br>
+    <div id="text4"><hr><br><h1 style="font-size:47px;font-family: sans-serif;background-color: black;" size="30" width="30%">OTHER FACILITIES</h1></div> 
+    <div class="text5"><ul style="list-style-type:disc">
+        <br>
+        <li>CATERING</li>
+         <li>HOT SHOWER</li>
+         <li>CANDEL NIGHT DINNER</li>
+         <li>SWIMMING POOL</li>
+         <li>GAMES</li>
+         <li>SHOPPING MALL</li>
+         <li>WIFI & MORE</li>
+         </ul></div>
+         <div class="details">
+            <br>
+            <b><a href='/ShaRoSa/home'>Home</a> | <a href='/ShaRoSa/about'>About Us</a></b>
+         </div>
+        
+ </body>
+</html>

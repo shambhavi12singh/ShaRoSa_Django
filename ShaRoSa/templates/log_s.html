@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Successful</title>
+    <style>
+        .ty
+        {
+            margin-left: 20%;
+            margin-right: 20%;
+            font-size:xx-large;
+            color: green;
+            background-color: aquamarine;
+        }
+        .pro
+        {
+            font-size: xx-large;
+            text-align: center;
+            color: cadetblue;
+            background-color: black;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        div.main
+        {
+        width:100%;
+        margin-top: 0px;
+        margin-bottom: 2%;
+        margin-left:0px;
+        text-align: center;
+        font-size: 200%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: navy;
+        color: white;
+        opacity: 75%;
+        }
+    </style>
+</head>
+<body background="{% static 'billbg.jpeg'%}">
+    <div class="main" align="left">
+        <br>
+              <img src="{% static 'icon.png'%}">
+      </div>
+    <div class="ty">
+    <h1 align="center"><b>You are successfully Logged In<br>!!!!!!!!!!!<BR></b></h1>
+</div>
+<br><br><br><br><br>
+<div class="pro">
+    <br>You can book your own room by clicking <a href='/ShaRoSa/book'>here</a><BR>&nbsp;
+</div>
+</body>
+</html>

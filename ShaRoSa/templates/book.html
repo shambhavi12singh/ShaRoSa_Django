@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book A Room!</title>
+    <style>
+        div.main
+        {
+            width:100%;
+            margin-top: 0%;
+        margin-left:0px;
+        text-align: center;
+        font-size: 200%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: navy;
+        color: white;
+        opacity: 95%;
+        }
+        .head{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 70%;
+        color: black;
+        font-size: 50px;
+        background-color: cadetblue;
+        opacity:75%;
+    }
+    .social{
+        margin-top: 40px;
+    }
+    .t
+    {
+        color: darkblue;
+    }
+    </style>
+
+</head>
+<body background="{% static 'billbg.jpeg'%}">
+    <div class="main" align="left">
+        <br>
+              <img src="{% static 'icon.png'%}">
+          <br>
+              <b><a href='/ShaRoSa/home'>Home</a> | <a href='/ShaRoSa/about'>About Us</a></b>
+      </div>
+      <hr>
+      <h1 align="left" class="head">Choose Your Room:</h1>
+      <hr width="30%" align="left">
+      <div>
+        <div class="t">
+        <center><div class="social"><img src="{% static 'bac.jpg'%}" height="60%" width="60%">
+            <h1 style="font-size: lucida handwritting;">BACHELOR ROOM  <br><form action="B1"><button type="submit" value ="BOOK NOW" style="color:green;">BOOK NOW</button></form></center></div>  <hr size="10px" color="orange">
+        </div>
+        <div class="t">
+        <center><div class="social1"><img src="{% static 'coup.jpg'%}" height="60%" width="60%" ><h1 style="font-size: lucida handwritting;">COUPLE ROOM  <br><form action="B2"><button type="submit" value ="BOOK NOW" style="color:green;">BOOK NOW</button></form></center></div>  </div>
+        </div><hr size="10px" color="orange">
+        <center><div class="t"><div class="social2"><img src="{% static 'suite.jpg'%}" height="60%" width="60%"><h1 style="font-size: lucida handwritting;">SUITE  <br><form action="B3"><button type="submit" value ="BOOK NOW" style="color:green;">BOOK NOW</button></form></center></div>  </div>
+        </div>
+    </div>   
+    <br>
+</body>
+</html>

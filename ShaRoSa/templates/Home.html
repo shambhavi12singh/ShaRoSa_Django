@@ -1,0 +1,201 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShaRoSa Hotel</title>
+    <style>
+      div.other
+      {
+        width: 50%;
+      }
+        div.main
+        {
+            width:100%;
+            margin-top: 0%;
+        margin-left:0px;
+        text-align: center;
+        font-size: 200%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: navy;
+        color: white;
+        opacity: 75%;
+        }
+        div.title2
+        {
+        padding: 60px;
+        margin-top: 10px;
+        margin-left: 900px;
+        text-align: left;
+        font-size: 175%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: navy;
+        color: white;
+        opacity: 75%;
+        }
+        main{
+          margin-left: 10%;
+          display: grid;
+          grid-template-rows: auto;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 20px;
+        }
+        .header {
+            float: left;
+        width:50%;
+        font-size: 200%;
+        font-family: Arial, Helvetica, sans-serif;
+  padding: 60px;
+  text-align: center;
+  background: navy;
+  color: white;
+  font-size: 30px;
+}
+.rt{
+  color:black;
+  text-decoration:underline;
+}
+.details{
+        margin-bottom:0px;
+        margin-top:30px;
+        height:200px;
+        width:100%;
+        background-color: cadetblue;
+        text-align: center;
+        font-size: 200%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+        opacity:75%;
+     }
+a{
+  color: magenta;
+  background-color: transparent;
+  text-decoration: none;
+}
+.wel
+{
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: navy;
+    font-size: 100px;
+    background-color: cadetblue;
+    opacity: 75%;
+}
+    .carousel {
+      left: 9%;
+      position: relative;
+  width:1250px;
+  height:900px;
+}
+.carousel-inner img {
+  margin-left :00px;
+}
+.head{
+    margin-top: 0px;
+    margin-right: 25%;
+    margin-left: 25%;
+    color: black;
+    font-size: 50px;
+    background-color: cadetblue;
+    opacity: 90%;
+}
+.head1{
+    margin-top: 0px;
+    margin-right: 37%;
+    margin-left: 25%;
+    color: black;
+    font-size: 50px;
+    background-color: cadetblue;
+    opacity: 90%;
+}
+.b
+{
+  color:darkblue;
+}
+    </style>
+    <link href="{% static 'bootstrap-5.2.0-dist/css/bootstrap.min.css' %}"  rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="{% static 'bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js' %}" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</head>
+<body background="{% static 'billbg.jpeg'%}">
+    <div class="main" align="left">
+      <br>
+            <img src="{% static 'icon.png'%}">
+        <br>
+            <b><a href='/ShaRoSa/home'>Home</a> | <a href='/ShaRoSa/about'>About Us</a></b>
+    </div>
+    <HR color="red" size="2%">
+    <h1 align="center" class="wel"><marquee> Welcome to the ShaRoSa Hotel....<br></h1></marquee>
+    <br><HR color="red" size="4%">
+    <h3 align="center" class="b">Looking for room?<br>
+    <a href='/ShaRoSa/book' class="rt">Book Now!</a></h3><br>
+    <HR color="red" size="4%">
+      <h3 align="center" class="b">Craving Some Food or Drinks?<br>
+        <a href='/ShaRoSa/menu' class="rt">Order Now!</a></h3><br>
+        <HR color="red" size="4%">
+    <h1 align="center" class="head">Room Options Available with us:</h1>
+    <br>
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active align-items-center justify-content-center">
+        <img src="{% static 'bac.jpg'%}" alt="Los Angeles" class="d-block w-100">
+        <div class="carousel-caption">
+            <h3>Bachelor's Rooms</h3>
+          </div>
+      </div>
+      <div class="carousel-item active align-items-center justify-content-center">
+        <img src="{% static 'coup.jpg'%}" alt="Chicago" class="d-block w-100">
+        <div class="carousel-caption">
+            <h3>Couple's Rooms</h3>
+          </div>
+      </div>
+      <div class="carousel-item active align-items-center justify-content-center">
+        <img src="{% static 'suite.jpg'%}" alt="New York" class="d-block w-100">
+        <div class="carousel-caption">
+            <h3>Suites</h3>
+          </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <hr color="red">
+    <h1 align="left" class="head1">Other available Services:</h1>
+    <br><br>
+    <main>
+      <div class="x">
+        <img src="{% static 'kit.jpg'%}"></div>
+        <div class="x">   
+          <br><br><br><br><br><br>       
+        <h1 class="b"><b><i><big>24 Hour Food Service</big></i></b></h3>   </div>
+        <div class="y"> 
+          <br><br><br><br><br><br>
+                    <h1 class="b"><b><i><big> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Swimming Pool</big></i></b></h3> 
+        </div>
+        <div class="y">  
+          <img src="{% static 'sp.jpg'%}"></div>
+        <div class="z"> 
+                  <img src="{% static 'bar.jpg'%}"></div>
+        <div class="z">  
+          <br><br><br><br><br><br>
+                 <h1 class="b"><b><i><big> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Walk-In Bar</big></i></b> </h3></div>
+    </main>
+    
+    <div class="details">
+      <hr color="black" size="10px">
+      <br>
+      <b>This website is developed by  <br> <a href='/ShaRoSa/dev'>WEB DEVELOPERS</a> </b>
+   </div> 
+    </body>
+</html>
